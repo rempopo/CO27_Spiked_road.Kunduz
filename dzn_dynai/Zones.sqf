@@ -184,9 +184,9 @@
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["NORMAL","AWARE","YELLOW","WEDGE"]
+	,["NORMAL","AWARE","RED","WEDGE"]
 	 /* (OPTIONAL) Activation condition */
-	,{ player inArea TRG1 }
+	,{ [TRG1, "", "> 0"] call dzn_fnc_ccPlayers  }
 ]
 
 ,[
@@ -208,7 +208,7 @@
 		]
 	]
 	/* Behavior: Speed, Behavior, Combat mode, Formation */
-	,["NORMAL","AWARE","YELLOW","WEDGE"]
+	,["NORMAL","AWARE","RED","WEDGE"]
 	 /* (OPTIONAL) Activation condition */
-	,{ player inArea TRG2 }
+	,{ [TRG2, "", "> 0"] call dzn_fnc_ccPlayers  }
 ]
